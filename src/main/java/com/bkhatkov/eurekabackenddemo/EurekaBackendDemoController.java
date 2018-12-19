@@ -13,6 +13,6 @@ public class EurekaBackendDemoController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "I am BACKEND at port: " + environment.getProperty("server.port");
+        return "I am BACKEND.V1 at port: " + environment.getProperty("server.port");
     }
 }
