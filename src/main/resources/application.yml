@@ -6,3 +6,5 @@ server:
 eureka:
   instance:
     instance-id: ${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}:${spring.application.name}:${server.port}
+    metadata-map:
+      version: V1
